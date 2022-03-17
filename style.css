@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-popup-color: hsl(217, 19%, 35%);
+  --accent-color: hsl(214, 17%, 51%);
+  --text-color: hsl(212, 23%, 69%);
+  --text-accent-color: hsl(210, 46%, 95%);
+  --box-shadow: 0 40px 40px -10px rgba(201, 2013, 225, 0.5);
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+}
