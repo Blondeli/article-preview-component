@@ -9,9 +9,154 @@
   --accent-color: hsl(214, 17%, 51%);
   --text-color: hsl(212, 23%, 69%);
   --text-accent-color: hsl(210, 46%, 95%);
-  --box-shadow: 0 40px 40px -10px rgba(201, 2013, 225, 0.5);
+  --box-shadow: 0 40px 40px -10px rgba(201, 213, 225, 0.5);
 }
 
 body {
+  background: var(--text-accent-color);
   font-family: "Manrope", sans-serif;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  width: 87.2%;
+}
+
+.img-container {
+  border-radius: 10px 10px 0 0;
+  height: 200px;
+  overflow: hidden;
+}
+
+.main-img {
+  position: relative;
+  top: -8.5%;
+  width: 100%;
+}
+
+.content {
+  padding: 2.25rem 2rem 1.25rem 2rem;
+}
+
+.content h1 {
+  color: var(--bg-popup-color);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.12px;
+  line-height: 1.5rem;
+}
+
+.content p {
+  color: var(--text-color);
+  font-size: 0.8125rem;
+  letter-spacing: 0.12px;
+  line-height: 1.25rem;
+  margin-top: 0.625rem;
+}
+
+.content .author {
+  display: flex;
+  margin-top: 2rem;
+  align-items: center;
+}
+
+.content .author .author-img {
+  border-radius: 50%;
+  margin-right: 1rem;
+  width: 40px;
+}
+
+.content .author .author-info {
+  flex-grow: 1;
+}
+
+.content .author .author-info h2 {
+  color: var(--bg-popup-color);
+  font-size: 0.8125rem;
+  letter-spacing: 0.12px;
+  line-height: 1.25rem;
+}
+
+.content .author .author-info h3 {
+  color: var(--text-color);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.12px;
+  line-height: 1.25rem;
+}
+
+.content .author .share-icon-box {
+  background: var(--text-accent-color);
+  border-radius: 50%;
+  height: 32px;
+  position: relative;
+  width: 32px;
+}
+
+.content .author .share-icon-box:hover {
+  cursor: pointer;
+}
+
+.content .author .share-icon-box .share-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (min-width: 768px) {
+  .card {
+    flex-direction: row;
+    max-width: 730px;
+    width: 80%;
+  }
+
+  .img-container {
+    align-self: stretch;
+    border-radius: 10px 0 0 10px;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    width: 39%;
+  }
+
+  .main-img {
+    display: block;
+    height: 100%;
+    left: 60%;
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+  }
+
+  .content {
+    padding: 2rem 2.5rem 2rem 2.5rem;
+    width: 61%;
+  }
+
+  .content h1 {
+    font-size: 1.25rem;
+    letter-spacing: 0.25px;
+    line-height: 1.75rem;
+  }
+
+  .content .author {
+    margin-top: 1.25rem;
+  }
 }
