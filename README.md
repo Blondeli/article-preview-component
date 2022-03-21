@@ -53,7 +53,7 @@ Users should be able to:
 
 ### What I learned
 
-For this challenge, I had to figure out how to set an image size relative to its parent container's height. For the desktop design, I wanted the image to automatically resize, so that its height would be equal to its parent container's while maintaining its original ratio. I found the following solution:
+- For this challenge, I had to figure out how to set an image size relative to its parent container's height. For the desktop design, I wanted the image to automatically resize, so that its height would be equal to its parent container's while maintaining its original ratio. I found the following solution:
 
 ```html
 <div class="img-wrap">
@@ -78,6 +78,13 @@ div > img {
   min-width: 100%;
   transform: translate(-50%, -50%);
 }
+```
+
+- I also learned how to change CSS properties using Javascript:
+
+```js
+let popup = document.getElementsByClassName("mobile-popup");
+popup[0].style.display = "block";
 ```
 
 ### Continued development

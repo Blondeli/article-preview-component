@@ -116,6 +116,10 @@ main {
   width: 32px;
 }
 
+.mobile-popup .share .popup-share-icon-box:hover {
+  cursor: pointer;
+}
+
 .mobile-popup .share .share-icon {
   filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(3572%)
     hue-rotate(198deg) brightness(119%) contrast(107%);
