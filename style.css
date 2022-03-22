@@ -31,6 +31,7 @@ main {
   box-shadow: var(--box-shadow);
   display: flex;
   flex-direction: column;
+  margin: 2rem 0;
   max-width: 400px;
   width: 87.2%;
 }
@@ -102,6 +103,10 @@ main {
   margin-right: 1.25rem;
 }
 
+.share > img:hover {
+  cursor: pointer;
+}
+
 .mobile-popup .share .twitter-icon,
 .desktop-popup .share .twitter-icon {
   margin: 0 1rem;
@@ -126,6 +131,10 @@ main {
 }
 
 /* Desktop popup */
+.icon-popup-wrapper {
+  position: relative;
+}
+
 .desktop-popup {
   background: var(--bg-popup-color);
   border-radius: 10px;
@@ -177,6 +186,7 @@ main {
   line-height: 1.25rem;
 }
 
+/* Share icon */
 .author .share-icon-box {
   background: var(--text-accent-color);
   border-radius: 50%;

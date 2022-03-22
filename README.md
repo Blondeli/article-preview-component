@@ -80,11 +80,18 @@ div > img {
 }
 ```
 
-- I also learned how to change CSS properties using Javascript:
+- I learned how to change CSS properties using Javascript:
 
 ```js
 let popup = document.getElementsByClassName("mobile-popup");
 popup[0].style.display = "block";
+```
+
+- I learned how to get the value of a CSS property using Javascript:
+
+```js
+let popup = document.getElementsByClassName("desktop-popup");
+window.getComputedStyle(popup[0]).getPropertyValue("display");
 ```
 
 ### Continued development

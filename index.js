@@ -1,10 +1,9 @@
 // Function to activate popup
 function popup() {
   let width = window.innerWidth;
+  // Check if the user sees the desktop or mobile design
   if (width >= 768) {
-    // console.log("test");
     let popup = document.getElementsByClassName("desktop-popup");
-    // console.log(window.getComputedStyle(popup[0]).getPropertyValue("display"));
     if (window.getComputedStyle(popup[0]).getPropertyValue("display") === "none") {
       popup[0].style.display = "block";
     } else {
@@ -18,6 +17,7 @@ function popup() {
   }
 }
 
+// Function to close popup when in mobile design
 function closePopup() {
   let popup = document.getElementsByClassName("mobile-popup");
   popup[0].style.display = "none";
